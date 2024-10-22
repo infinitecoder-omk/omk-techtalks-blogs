@@ -1,0 +1,89 @@
+GIT overall Tutorial :
+****************************************************************************************************************************************************************************************
+1.create your repository on git make it private and add readme to file thats your 1st commit 
+2.Download some imp thing like vs code and git bash
+3.configure your repository so that it will know about your project and userName and Email
+               - git config --global user.name "here enter username the name that you given to your github project"
+               - git config --global user.email "your official mail with which you made account on your git Hub"
+               - git config --list   (gives you list of all the userName and mail save this in notepad for further use)
+
+4.Now Create one folder and open vs code in it and open integrated terminal inside the vs code 
+5.Now pull the code from git hub by putting command in integrated terminal
+               -git clone <http link that you will get from github
+6.git status 
+7.git add .
+8.git commit -m "message about your update to that code"
+9.git push origin main (this will show you option to connect your device to the vs code once it connect then your code will be push into the github)
+
+10.git diff <branch name> (with the help of this we can check the difference between the two branches)
+11.git merge main (This will directly merge the your branch with the main branch through the cmd) after this their will be notification related to PR is generated on git hub
+12.Another standard industry practice to merge the branch is to go to git hub and raise the pull request (PR Raise) or Merge Request(MR Request)  their with the help of ui you can check the conflicts and also merge the requests)
+13.git log (Gives transactions that we made on cmd)
+14.git checkout -b "Branch_Name" / git branch <branch_Name>  creates new branch from existing branch
+15.git remote add origin <repository_url>
+16.git remote -v (shows their are how many remote origins)
+17.git remote remove origin <repository_url>
+18.git fetch upstream 
+19.git merge upstream/main 
+
+
+****************************************************************************************************************************************************************************************
+Now if we have already half done project on our local machine and we want to add it on git then further procced with other operation then they are :
+git int 
+git remote add origin <paste the link that we will get from github and which we used for git clone>
+git remote -v (extra info about the git origin that we set as remote)
+git branch (on which branch exactly we are is shown by this command)
+git push -u origin main ( the reason for -u is next time also we uploading our project on the main so next time onwards only use GIT PUSH)
+
+****but is is recommended that we have to first create git hub and then we have to write code in that branch********
+
+
+****************************************************************************************************************************************************************************************
+first create your new repository on your GitHub / GitLab :
+****************************************************************************************************************************************************************************************
+1. clone this repository in your new folder
+2. Copy paste your code that you downloaded as a template here 
+3. open cmd and put commands
+4. git add .
+5. git commit -m "message"
+6. git push
+
+
+
+****************************************************************************************************************************************************************************************
+Git Ignore:
+Git ignore we creates while creating project the file should be created by the name .gitignore and we have to put some data that may the file suffix that which with file ends
+and by means of this we untrack the tracked changes in the project that contains starts with * // and etc symbols
+****************************************************************************************************************************************************************************************
+All git Commands:
+****************************************************************************************************************************************************************************************
+1.git fetch : Download the latest changes from the Remote Repository
+2.git diff : Show File Differences not yet Staged
+3.git checkout -b <branch_name> : create and switch to new branch
+4.git checkout <branch_name> : Switch to an existing branch
+5.git squash : combining multiple commits into single one
+6.git commit --amend : Modify the last commit
+7.git reset -hard : resets everything to a previous commit, erasing all uncommitted changes
+8.git push origin <branch_name> : push a branch to a remote 
+9.git status : show the state of your working directory
+10.git commit -a -m "commit message" :commit all tracked changes with a message
+11.git add <file_path> : add files to a staging area 
+12.git pull : fetch and merge remote changes
+13.git stash : stash changes for later
+14.git format -patch -1 <commit_id> : create a patch file for a specific commit 
+15.git show <commit_id> : show details about a commit 
+16.git reset HEAD~1 :undo the last commit, preserving the changes locally 
+17.git apply <patch_file_name> : apply changes from a patch file 
+18.git branch -d <branch_name> : delete a branch forcefully 
+19.git reset : undo commits by moving branch reference 
+20.git clone : create a local copy of a remote repo.
+21.git rebase -i : Rebase interactively, rewrite commit history
+22.git cherry-pick <commit_id> : Apply changes from a specific commit 
+23.git revert : undo commits by creating a new commit 
+24.git merge : merge branches together 
+25.git log -stat : show commit logs with stats
+26.git stash pop : apply and remove stashed changes
+27.git branch : lists branches
+28.git restore . : revert all the changes
+29.git clean –f : revert or remove all the changes
+29.git push origin --delete <branch_name> : delete the pushed branch on the git 
